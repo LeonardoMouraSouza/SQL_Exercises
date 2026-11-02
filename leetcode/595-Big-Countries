@@ -1,0 +1,9 @@
+/*
+LeetCode 595. Big Countries
+
+Description: SELECT the name, population and the area, FROM the World table,
+WHERE it has an area of at least three million OR a population of at least twenty-five million.
+*/
+
+SELECT name, population, area FROM World
+WHERE area >= 3000000 OR population >= 25000000
