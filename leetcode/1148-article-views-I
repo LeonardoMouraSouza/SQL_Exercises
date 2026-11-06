@@ -1,0 +1,16 @@
+/*
+
+1148. Article Views I
+
+Description: SELECT the author_id FROM the Views table, 
+rename it as "id" as per requirements, 
+use DISTINCT so each author appears only once, 
+WHERE the author_id is the same as the viewer_id, 
+and ORDER the result BY "id" in Ascending order.
+
+*/
+
+SELECT DISTINCT author_id AS id
+FROM Views
+WHERE author_id = viewer_id
+ORDER BY id ASC;
